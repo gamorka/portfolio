@@ -1,0 +1,9 @@
+body {
+    font-family:; 
+    color: black; 
+    background-color:white;
+}
+
+ul, ol {
+	list-style-type: none;
+}
