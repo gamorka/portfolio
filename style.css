@@ -4,8 +4,16 @@ body {
     background-color: var(--white);
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul, ol {
 	list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
@@ -13,9 +21,43 @@ a {
     font-style: normal
 }
 
+img {
+    display: block;
+}
+
 button {
     border: none;
+    cursor: pointer;
+}
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*---------------------HEADER-----*/
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container {
+    display: flex;
+    gap: 332px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 74px;
+}
+
+.header-menu-item {
+    display: flex;
+    gap: 40px;
 }
 
 .logo{
@@ -47,6 +89,12 @@ button {
     color: #2E2F42;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+    
+}
+
 .address {
     font-size: 16px;
     font-weight: 400;
@@ -55,8 +103,12 @@ button {
     color: #434455; 
 }
 
+/*---------------------HEADER-END----*/
+/*---------------------HERO----*/
+
 .hero {
     background:#2E2F42;
+    padding: 120px 0;
 }
 
 .hero-title {
@@ -66,11 +118,14 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
 }
 
 .hero-button {
     border-radius: 4px;
-    width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -78,7 +133,31 @@ button {
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0 auto;
+    padding:16px 32px;
+    display: block;    
 }
+
+.hero-button:hover{
+    background-color: #404BBF;
+}
+/*---------------------HERO-END---*/
+/*---------------------FACILITIES----*/
+.facilities-section {
+    padding: 120px 0;
+}
+
+.facilities-container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.facilities-list {
+    display: flex;
+    gap: 24px;
+}
+    
 
 .facilities-title {
     font-size: 20px;
@@ -86,6 +165,7 @@ button {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .facilities-paragraph {
@@ -95,9 +175,31 @@ button {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
+/*---------------------FACILITIES-END---*/
+/*---------------------TEAM----*/
 
 .team-section {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /*margin-bottom: 120px;*/
+}
+
+.team-titel{
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
+.team-card {
+    background-color: #fff;
+    padding: 32px 16px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-names {
@@ -107,6 +209,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .team-position {
@@ -118,12 +221,37 @@ button {
     color: #434455;
 } 
 
+/*---------------------TEAM-END---*/
+/*---------------------PORTFOLIO----*/
+.portfolio {
+    padding: 120px 0;
+}
+
+.portfolio-title {
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .portfolio-items-title{
 font-weight: 500;
 font-size: 20px;
 line-height: 120%;
 letter-spacing: 0.02em;
 color: #2E2F42; 
+margin-bottom: 8px;
 }
 
 .cards-content {
@@ -133,9 +261,15 @@ line-height: 150%;
 letter-spacing: 0.02em;
 color: #434455;
 }
+/*---------------------PORTFOLIO-END---*/
+/*---------------------FOOTER----*/
 
 .logo-footer-span{
     color: #F4F4FD;
+}
+
+.footer-style{
+    padding: 100px 1020px 100px 156px;
 }
 
 .footer-paragraph {
@@ -144,8 +278,11 @@ color: #434455;
     line-height: 150%;
     letter-spacing: 0.02em;
     color:  #F4F4FD;
+    max-width: 264px;
+    margin-top: 16px;
 }
 
 .footer-style {
     background: #2E2F42;
 }
+/*---------------------FOOTER-END---*/
