@@ -45,9 +45,7 @@ header {
 
 .header-container {
     display: flex;
-    gap: 332px;
-    padding-right: 0;
-    padding-left: 0;
+    justify-content: space-between;
 }
 
 .header-nav {
@@ -55,7 +53,7 @@ header {
     gap: 74px;
 }
 
-.header-menu-item {
+.header-menu-list {
     display: flex;
     gap: 40px;
 }
